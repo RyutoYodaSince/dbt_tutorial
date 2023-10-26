@@ -1,4 +1,6 @@
-select Beverage,Calories
-from`dbt-datapipeline-test.starbucks_data.starbucks_drinks` 
-
-
+SELECT
+    Beverage_category,
+    Beverage_prep,
+    Calories
+FROM {{ ref('starbucks_drink.SQL') }}  -- 注意: "starbucks_drink" としています
+WHERE Calories >= 350;
