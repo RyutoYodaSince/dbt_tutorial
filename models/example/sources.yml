@@ -1,8 +1,8 @@
 version: 2
 
 sources:
-  - name: starbucks_data_source
+  - name: data_test
     database: dbt-datapipeline-test
-    schema: starbucks_data
+    schema: data_test
     tables:
-      - name: starbucks_drinks
+      - name: ecommerce_transactions

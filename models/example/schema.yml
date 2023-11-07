@@ -1,21 +1,23 @@
-
 version: 2
 
 models:
-    - name: my_first_dbt_model
-      description: "A starter dbt model"
-      columns:
-          - name: id
-            description: "The primary key for this table"
-            tests:
-                - unique
-                - not_null
+  - name: fact_transactions
+    description: "A table of ecommerce transactions."
+    columns:
+      - name: TransactionID
+        description: "The unique identifier for each transaction."
+      - name: TransactionDate
+        description: "The date when the transaction occurred."
+      - name: CustomerName
+        description: "The name of the customer."
+      - name: ProductName
+        description: "The name of the product."
+      - name: Quantity
+        description: "The quantity of products purchased in the transaction."
+      - name: UnitPrice
+        description: "The price per unit of the product."
+      - name: TotalPrice
+        description: "The total price for the transaction."
+      - name: PaymentMethod
+        description: "The payment method used for the transaction."
 
-    - name: my_second_dbt_model
-      description: "A starter dbt model"
-      columns:
-          - name: id
-            description: "The primary key for this table"
-            tests:
-                - unique
-                - not_null
