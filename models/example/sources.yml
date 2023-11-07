@@ -1,8 +1,0 @@
-version: 2
-
-sources:
-  - name: starbucks_data_source
-    database: dbt-datapipeline-test
-    schema: starbucks_data
-    tables:
-      - name: starbucks_drinks

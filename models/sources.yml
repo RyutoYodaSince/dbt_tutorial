@@ -1,0 +1,7 @@
+
+sources:
+  - name: data_test
+    database: dbt-datapipeline-test
+    schema: data_test
+    tables:
+      - name: ecommerce_transactions

@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: fact_transactions
+    description: "A table of ecommerce transactions."
+    columns:
+      - name: TransactionID
+        description: "The unique identifier for each transaction."
+      - name: TransactionDate
+        description: "The date when the transaction occurred."
+      - name: CustomerName
+        description: "The name of the customer."
+      - name: ProductName
+        description: "The name of the product."
+      - name: Quantity
+        description: "The quantity of products purchased in the transaction."
+      - name: UnitPrice
+        description: "The price per unit of the product."
+      - name: TotalPrice
+        description: "The total price for the transaction."
+      - name: PaymentMethod
+        description: "The payment method used for the transaction."
+
